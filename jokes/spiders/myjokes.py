@@ -30,4 +30,6 @@ class MyjokesSpider(scrapy.Spider):
             next_page_link= response.urljoin(next_page)
             yield scrapy.Request(url=next_page_link, callback=self.parse)
 
+        pritn('hello')
+
 
